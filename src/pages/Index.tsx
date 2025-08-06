@@ -14,8 +14,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background px-4">
-      <div className="text-center max-w-md w-full">
+    <div className="h-screen flex flex-col items-center justify-center bg-background px-4">
         <div className="mb-12">
           <h1 className="text-3xl font-semibold text-foreground mb-4">
             Conecte sua conta
