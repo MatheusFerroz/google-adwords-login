@@ -13,16 +13,26 @@ const Index = () => {
     window.location.href = googleOAuthUrl;
   };
 
-// src/pages/Index.tsx
-return (
-  <div className="min-h-screen flex items-center justify-center bg-background px-4">
-    <div className="text-center">
-      {/* ...seu título e texto... */}
-      <GoogleButton onClick={handleGoogleConnect} />
-      {/* ... */}
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-background px-4">
+      <div className="text-center max-w-md w-full">
+        <div className="mb-12">
+          <h1 className="text-3xl font-semibold text-foreground mb-4">
+            Conecte sua conta
+          </h1>
+          <p className="text-muted-foreground text-lg">
+            Faça login com sua conta Google para continuar
+          </p>
+        </div>
+        
+        <GoogleButton onClick={handleGoogleConnect} />
+        
+        <p className="text-sm text-muted-foreground mt-8 leading-relaxed">
+          Ao conectar, você concorda com os nossos termos de serviço e política de privacidade.
+        </p>
+      </div>
     </div>
-  </div>
-);
-
+  );
+};
 
 export default Index;
