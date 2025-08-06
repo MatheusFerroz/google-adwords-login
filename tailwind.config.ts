@@ -61,6 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				google: {
+					DEFAULT: 'hsl(var(--google-button))',
+					foreground: 'hsl(var(--google-button-foreground))',
+					border: 'hsl(var(--google-button-border))',
+					hover: 'hsl(var(--google-button-hover))'
 				}
 			},
 			borderRadius: {
